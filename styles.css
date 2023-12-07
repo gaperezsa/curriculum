@@ -1,35 +1,86 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset some basic elements */
+body, h1, h2, h3, p, figure, figcaption {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
+/* Apply a font similar to the example */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+/* Header styles */
 header {
     background-color: #333;
     color: #fff;
-    text-align: center;
     padding: 1em 0;
 }
 
 header h1 {
-    margin: 0;
+    text-align: center;
+    font-size: 2.5em;
 }
 
+/* Section styles */
 section {
-    padding: 2em;
+    padding: 4em 2em;
     max-width: 800px;
     margin: auto;
 }
 
 section h2 {
-    color: #333;
+    font-size: 2em;
+    margin-bottom: 0.5em;
 }
 
+/* Style the paragraphs in about section */
+#about p {
+    margin-bottom: 2em;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+/* Contact section styles */
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+/* Example icon style */
+.icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+
+/* Footer styles */
 footer {
-    text-align: center;
-    padding: 1em 0;
     background-color: #333;
     color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    #contact {
+        flex-direction: column;
+    }
 }
